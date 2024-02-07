@@ -1,0 +1,535 @@
+html{
+    font-family: 'Roboto Slab', serif;
+    background-color: #ffffff ;
+    margin: 0;
+    padding: 0;
+}
+
+#titulo-cabecalho{
+  margin: 10;
+}
+
+/*navbar superior*/
+.navbar {
+  background-image: url('img/placa\ de\ cores.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+  background-size: cover;
+}
+/*corpo do navbar*/
+.offcanvas-body {
+  position: relative;
+}
+
+.offcanvas-body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/placa\ de\ cores.png'); /* Replace with the actual path to your image file */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7; /* Adjust the overlay opacity as needed */
+  z-index: -1; /* Move the overlay behind the content */
+}
+
+.offcanvas-header {
+  position: relative;
+  border: none; /* Remove border from the header */
+}
+
+.offcanvas-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/placa\ de\ cores.png'); /* Replace with the actual path to your image file */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7; /* Adjust the overlay opacity as needed */
+  z-index: -1; /* Move the overlay behind the content */
+}
+
+.offcanvas-title {
+  color: white; /* Set text color for the title */
+}
+
+.btn-close {
+  color: white; /* Set text color for the close button */
+}
+
+/*Corpo principal do site*/
+.main-area{
+  max-width: 1900px;
+  position: relative;
+}
+
+p{
+  text-align: justify;
+  margin: 170px;
+}
+
+bold{
+  color: #0f4343;
+}
+
+p{
+  padding: 10px;
+  font-size: 21px;
+}
+
+h1{
+  text-transform: uppercase;
+  margin: 150px;
+  padding: 30px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.quotes-servicos ul{
+  list-style: none;
+  color:black;
+  margin-bottom: 50px;
+} 
+
+#title-service{
+  text-align: left ;
+  padding: 25px;
+}
+
+/*container sobre a terrenus*/
+.quotes-container-1{
+  padding-bottom: 20px;
+}
+
+/*container serviços*/
+.container-servicos h1{
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.container-servicos figcaption{
+  color: #fff;
+}
+
+.container-servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0f4343;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0), 5px 5px 15px rgb(0, 0, 0);
+}
+
+.card {
+  width: 500px; /* Ajuste a largura conforme necessário */
+  height: 100px; /* Ajuste a altura conforme necessário */
+}
+
+.card-img {
+  width: 100%; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  object-fit: cover;
+}
+
+.figure-img {
+  /* Adiciona uma transição suave para o efeito de zoom */
+  transition: transform 0.3s ease;
+}
+
+/* Define um hover para aumentar o zoom na imagem */
+.figure:hover .figure-img {
+  transform: scale(2.1); /* Ajuste o valor conforme necessário */
+}
+
+/*container de que maneira podemos contribuir*/
+.container-contribuir h1{
+  color: #0f4343;
+  text-transform: uppercase;
+  padding-top: 50px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.container-contribuir p{
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 21px;
+}
+
+/*PRINCIPAIS CLIENTES E PARCEIROS*/
+.principais-clientes{
+  padding-top: 30px;
+
+}
+
+.principais-clientes h2{
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.princpal-parceiro h2{
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.img-principais-clientes {
+  text-align: center; /* Centraliza a imagem horizontalmente */
+  margin: 20px 0; /* Adiciona margens para espaçamento */
+}
+
+.img-principais-clientes img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaço extra abaixo da imagem */
+  margin: 0 auto; /* Centraliza a imagem dentro da div */
+}
+
+.princpal-parceiro{
+padding-top: 50px;
+padding-bottom: 100px;
+}
+
+.img-principal-parceiro img{
+max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+height: auto; /* Mantém a proporção da imagem */
+display: block; /* Remove espaço extra abaixo da imagem */
+margin: 0 auto; /* Centraliza a imagem dentro da div */
+}
+
+/*blog*/
+.container-blog{
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+
+.container-blog h2{
+  padding-top: 60px;
+  padding-bottom: 50px;
+  color: #0f4343;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000
+}
+
+.container-blog h1, h3{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/*area de atuacao*/
+.areas-atuacao{
+  position: absolute;
+  width: 2378px; /* Ajuste a largura conforme necessário */
+  height: 700px; /* Ajuste a altura conforme necessário */
+  background-image: url(img/area_de_atuacao/ilustracao-do-planeta-terra-com-foco-na-sustentabilidade-ambiental-para-o-dia-da-terra-generative-ai_893571-1693\ \(1\)\ \(1\).png);
+  box-shadow: 5px 5px 15px rgb(0, 0, 0), 5px 5px 15px rgb(0, 0, 0);        
+}
+
+.areas-atuacao h2{
+  padding-top: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+}
+
+.areas-atuacao h3{
+  color: #fff;
+  padding-top: 40px;
+  padding-left: 190px;
+  font-size: 50px;
+}
+
+/*primeiro contador*/
+.retangulo {
+  width: 200px; /* Largura desejada */
+  height: 100px; /* Altura desejada */
+  background-color: #ccc; /* Cor de fundo desejada */
+  border: 1px solid #000; /* Borda desejada */
+  padding: 20px; /* Espaçamento interno desejado */
+}
+
+/*primeiro contador*/
+.primeiro-contador {
+  position: relative; /* Torna a posição relativa para que a posição absoluta funcione */
+}
+
+.square {
+  position: absolute;
+  top: 200px; /* Ajuste a posição vertical do quadrado conforme necessário */
+  left: 1650px; /* Ajuste a posição horizontal do quadrado conforme necessário */
+  width: 700px; /* Ajuste a largura do quadrado conforme necessário */
+  height: 600px; /* Ajuste a altura do quadrado conforme necessário */
+  background-color: #0f4343; /* Cor de fundo do quadrado */
+  border: 10px solid #000; /* Borda do quadrado */
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+}
+
+.primeiro-contador span {
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 160px;
+  font-size: 200px;
+}
+
+.square p{
+  color: #fff;
+  border-top: 1px solid #fff;
+  font-size: 19px;
+}
+
+.primeiro-contador i {
+  color: #fff;
+  font-size: 150px;
+}
+
+/*Segundo contador*/
+.segundo-contador {
+  position: relative; /* Torna a posição relativa para que a posição absoluta funcione */
+}
+
+.segundo-square {
+  position: absolute;
+  top: 200px; /* Ajuste a posição vertical do quadrado conforme necessário */
+  left: 25px; /* Ajuste a posição horizontal do quadrado conforme necessário */
+  width: 700px; /* Ajuste a largura do quadrado conforme necessário */
+  height: 600px; /* Ajuste a altura do quadrado conforme necessário */
+  background-color: #0f4343; /* Cor de fundo do quadrado */
+  border: 10px solid #000; /* Borda do quadrado */
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+}
+
+.segundo-contador span {
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 160px;
+  font-size: 200px;
+}
+
+.segundo-square p{
+  color: #fff;
+  border-top: 1px solid #fff;
+  font-size: 19px;
+}
+
+.segundo-contador i {
+  color: #fff;
+  font-size: 150px;
+}
+
+/*terceiro contador*/
+.terceiro-contador {
+  position: relative; /* Torna a posição relativa para que a posição absoluta funcione */
+}
+
+.terceiro-square {
+  position: absolute;
+  top: 200px; /* Ajuste a posição vertical do quadrado conforme necessário */
+  left: 840px; /* Ajuste a posição horizontal do quadrado conforme necessário */
+  width: 700px; /* Ajuste a largura do quadrado conforme necessário */
+  height: 600px; /* Ajuste a altura do quadrado conforme necessário */
+  background-color: #0f4343; /* Cor de fundo do quadrado */
+  border: 10px solid #000; /* Borda do quadrado */
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+}
+
+.terceiro-contador span {
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 160px;
+  font-size: 200px;
+}
+
+.terceiro-square p{
+  padding-left: 40px;
+  color: #fff;
+  border-top: 1px solid #fff;
+  font-size: 19px;
+}
+
+.terceiro-contador i {
+  color: #fff;
+  font-size: 150px;
+}
+
+/*rodape*/
+footer{
+  background-color: #0f4343;
+  padding: 20px; /* Adicione o preenchimento desejado ao seu rodapé */
+  margin-top: 1200px; /* Remover margem superior padrão */
+  margin-bottom: 0; /* Remover margem inferior padrão */
+  position: relative;
+  box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.footer-left,
+.footer-right {
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-right: 10px;
+}
+
+footer li{
+  padding: 10px;
+  padding-left: 190px;
+  color: #fff;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #fff;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin-left: 210px;
+    margin-right: 210px;
+}
+
+/*teste*/
+.social-icons {
+  display: flex;
+  gap: 10px; /* Adjust spacing between circles */
+  position: absolute;
+  bottom: 10px; /* Adjust bottom position as needed */
+  right: 260px; /* Adjust right position as needed */
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Set width and height for each circle */
+  height: 40px;
+  border-radius: 50%; /* Make it a circle */
+  text-decoration: none;
+  color: white;
+}
+
+.social-icons a:nth-child(1) {
+  background-color: #964b00; /* Background color for the first link */
+}
+
+.social-icons a:nth-child(2) {
+  background-color: #6c3c0c; /* Background color for the second link */
+}
+
+.social-icons a:nth-child(3) {
+  background-color: #1c4514; /* Background color for the third link */
+}
+/*configuracao do botao para voltar para o topo*/
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #964b00;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-color: #964b00;
+}
+
+/*configuracao do botao do whatapp*/
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00ff55; /* Blue color, adjust as needed */
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: none; /* Initially hide the button */
+  z-index: 999; /* Ensure it's above other content */
+  transition: background-color 0.3s ease-in-out;
+}
+
+#backToTop.active {
+  display: block; /* Show the button when it's active (e.g., when scrolling down) */
+}
+
+#backToTop:hover {
+  background-color: #6c3c0c; /* Darker blue color on hover */
+}
+
+/* Styles for the WhatsApp button */
+#backToTop {
+  position: fixed;
+  width: 70px; /* Defina o tamanho do botão */
+  height: 70px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6c3c0c; /* Blue color, adjust as needed */
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: none; /* Initially hide the button */
+  z-index: 999; /* Ensure it's above other content */
+  transition: background-color 0.3s ease-in-out;
+}
+
+#backToTop.active {
+  display: block; /* Show the button when it's active (e.g., when scrolling down) */
+}
+
+#backToTop:hover {
+  background-color: #6c3c0c; /* Darker blue color on hover */
+}
+
+/* Styles for the WhatsApp button */
+.whatsapp-button {
+  position: fixed;
+  width: 70px; /* Defina o tamanho do botão */
+  height: 70px;
+  bottom: 20px;
+  right: 100px; /* Adjust right position to align with Back to Top button */
+  background-color: #193314; /* WhatsApp green color */
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: none; /* Initially hide the button */
+  z-index: 999; /* Ensure it's above other content */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.whatsapp-button.active {
+  display: block; /* Show the button when it's active (e.g., when scrolling down) */
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* WhatsApp green color on hover */
+}

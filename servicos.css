@@ -1,0 +1,464 @@
+html{
+    font-family: 'Roboto Slab', serif;
+    background-color: #fff ;
+    margin: 0;
+    padding: 0;
+}
+
+/*padrao strong*/
+bold{
+  color: #0f4343;
+}
+
+/*navbar superior*/
+.navbar {
+    background-image: url('img/placa\ de\ cores.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-size: cover;
+  }
+  /*corpo do navbar*/
+  .offcanvas-body {
+    position: relative;
+  }
+  
+  .offcanvas-body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/placa\ de\ cores.png'); /* Replace with the actual path to your image file */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Adjust the overlay opacity as needed */
+    z-index: -1; /* Move the overlay behind the content */
+  }
+  
+  .offcanvas-header {
+    position: relative;
+    border: none; /* Remove border from the header */
+  }
+  
+  .offcanvas-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/placa\ de\ cores.png'); /* Replace with the actual path to your image file */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Adjust the overlay opacity as needed */
+    z-index: -1; /* Move the overlay behind the content */
+  }
+  
+  .offcanvas-title {
+    color: white; /* Set text color for the title */
+  }
+  
+  .btn-close {
+    color: white; /* Set text color for the close button */
+  }
+/*container do titulo principal*/
+.servicos-prestados h2{
+  padding-top: 50px;
+  padding-left: 190px;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.servicos-prestados p{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 190px;
+  font-size: 21px;
+}
+
+/*Serviços prestados meio ambiente*/
+.content{
+  padding-top: 100px;
+  margin-bottom: 100px;
+  flex: 1;
+  margin-right: 0;
+  background-color: #103110; /* Substitua pela cor desejada em formato hexadecimal ou nome da cor */
+  padding: 20px;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.8),
+              0px -10px 10px -10px rgba(0, 0, 0, 0.8);
+}
+
+.images img{
+  padding-left: 190px;
+  margin-top: 15px;
+}
+
+.content h2{
+  padding-top: 50px;
+  padding-left: 190px;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.content h2::after {
+  content: ""; /* Cria um elemento pseudo ::after */
+  display: block;
+  width: 15%; /* Ajuste conforme necessário */
+  margin-top: 8px; /* Ajuste conforme necessário */
+  border-bottom: 3px solid #fff; /* Cor e estilo do border-bottom */
+}
+
+.content p{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.content bold{
+  color: #fff;
+}
+
+.content ul{
+  padding-top: 50px;
+  padding-left: 190px;
+  list-style: none;
+  color: #fff;
+  font-size: 21px;
+}
+
+/*Serviços prestados viveiro*/
+.container-viveiros{
+  padding-top: 100px;
+  margin-bottom: 100px;
+  flex: 1;
+  margin-right: 0;
+  background-color: #0d730d; /* Substitua pela cor desejada em formato hexadecimal ou nome da cor */
+  padding: 20px;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.8),
+              0px -10px 10px -10px rgba(0, 0, 0, 0.8);
+}
+
+.container-viveiros h2{
+  padding-top: 50px;
+  padding-left: 190px;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.container-viveiros h2::after {
+  content: ""; /* Cria um elemento pseudo ::after */
+  display: block;
+  width: 29%; /* Ajuste conforme necessário */
+  margin-top: 8px; /* Ajuste conforme necessário */
+  border-bottom: 3px solid #fff; /* Cor e estilo do border-bottom */
+}
+
+.container-viveiros ul{
+  padding-top: 50px;
+  padding-left: 190px;
+  list-style: none;
+  color: #fff;
+  font-size: 21px;
+}
+
+/*Container de serviços prestados mineração e geologia*/
+.container-geologio-mineracao{
+  padding-top: 100px;
+  margin-bottom: 100px;
+  flex: 1;
+  margin-right: 0;
+  background-color: #4f3011; /* Substitua pela cor desejada em formato hexadecimal ou nome da cor */
+  padding: 20px;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.8),
+              0px -10px 10px -10px rgba(0, 0, 0, 0.8);
+}
+
+.container-geologio-mineracao h2{
+  padding-top: 50px;
+  padding-left: 190px;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.container-geologio-mineracao h2::after {
+  content: ""; /* Cria um elemento pseudo ::after */
+  display: block;
+  width: 21%; /* Ajuste conforme necessário */
+  margin-top: 8px; /* Ajuste conforme necessário */
+  border-bottom: 3px solid #fff; /* Cor e estilo do border-bottom */
+}
+
+.container-geologio-mineracao ul{
+  padding-top: 50px;
+  padding-left: 190px;
+  list-style: none;
+  color: #fff;
+  font-size: 21px;
+}
+
+/*container topografia, sondagem e terraplanagem*/
+.container-topografia-terraplagem-sondagem{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #964b00;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.8),
+              0px -10px 10px -10px rgba(0, 0, 0, 0.8);
+}
+
+/*container topografia*/
+.container-topografia h2{
+  padding-top: 50px;
+  padding-left: 190px;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.container-topografia h2::after {
+  content: ""; /* Cria um elemento pseudo ::after */
+  display: block;
+  width: 10%; /* Ajuste conforme necessário */
+  margin-top: 8px; /* Ajuste conforme necessário */
+  border-bottom: 3px solid #fff; /* Cor e estilo do border-bottom */
+}
+
+.container-topografia p{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 190px;
+  color: #fff;
+  font-size: 21px;
+}
+
+/*container terraplanagem*/
+.container-terraplanagem h2{
+  padding-top: 50px;
+  padding-left: 190px;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.container-terraplanagem h2::after {
+  content: ""; /* Cria um elemento pseudo ::after */
+  display: block;
+  width: 14%; /* Ajuste conforme necessário */
+  margin-top: 8px; /* Ajuste conforme necessário */
+  border-bottom: 3px solid #fff; /* Cor e estilo do border-bottom */
+}
+
+.container-terraplanagem p{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 190px;
+  color: #fff;
+  font-size: 21px;
+}
+
+/*container sondagem*/
+.container-sondagem h2{
+  padding-top: 50px;
+  padding-left: 190px;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.container-sondagem h2::after {
+  content: ""; /* Cria um elemento pseudo ::after */
+  display: block;
+  width: 10%; /* Ajuste conforme necessário */
+  margin-top: 8px; /* Ajuste conforme necessário */
+  border-bottom: 3px solid #fff; /* Cor e estilo do border-bottom */
+}
+
+.container-sondagem p{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 190px;
+  color: #fff;
+  font-size: 30px;
+}
+
+/*Rodape*/
+footer{
+  background-color: #0f4343;
+  padding: 20px; /* Adicione o preenchimento desejado ao seu rodapé */
+  margin-top: 100px; /* Remover margem superior padrão */
+  margin-bottom: 0; /* Remover margem inferior padrão */
+  position: relative;
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.footer-left,
+.footer-right {
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-right: 10px;
+}
+
+footer li{
+  padding: 10px;
+  padding-left: 190px;
+  color: #fff;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #fff;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin-left: 210px;
+    margin-right: 210px;
+}
+
+/*teste*/
+.social-icons {
+  display: flex;
+  gap: 10px; /* Adjust spacing between circles */
+  position: absolute;
+  bottom: 10px; /* Adjust bottom position as needed */
+  right: 260px; /* Adjust right position as needed */
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Set width and height for each circle */
+  height: 40px;
+  border-radius: 50%; /* Make it a circle */
+  text-decoration: none;
+  color: white;
+}
+
+.social-icons a:nth-child(1) {
+  background-color: #964b00; /* Background color for the first link */
+}
+
+.social-icons a:nth-child(2) {
+  background-color: #6c3c0c; /* Background color for the second link */
+}
+
+.social-icons a:nth-child(3) {
+  background-color: #1c4514; /* Background color for the third link */
+}
+/*configuracao do botao para voltar para o topo*/
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #964b00;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-color: #964b00;
+}
+
+/*configuracao do botao do whatapp*/
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00ff55; /* Blue color, adjust as needed */
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: none; /* Initially hide the button */
+  z-index: 999; /* Ensure it's above other content */
+  transition: background-color 0.3s ease-in-out;
+}
+
+#backToTop.active {
+  display: block; /* Show the button when it's active (e.g., when scrolling down) */
+}
+
+#backToTop:hover {
+  background-color: #6c3c0c; /* Darker blue color on hover */
+}
+
+/* Styles for the WhatsApp button */
+#backToTop {
+  position: fixed;
+  width: 70px; /* Defina o tamanho do botão */
+  height: 70px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6c3c0c; /* Blue color, adjust as needed */
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: none; /* Initially hide the button */
+  z-index: 999; /* Ensure it's above other content */
+  transition: background-color 0.3s ease-in-out;
+}
+
+#backToTop.active {
+  display: block; /* Show the button when it's active (e.g., when scrolling down) */
+}
+
+#backToTop:hover {
+  background-color: #6c3c0c; /* Darker blue color on hover */
+}
+
+/* Styles for the WhatsApp button */
+.whatsapp-button {
+  position: fixed;
+  width: 70px; /* Defina o tamanho do botão */
+  height: 70px;
+  bottom: 20px;
+  right: 100px; /* Adjust right position to align with Back to Top button */
+  background-color: #193314; /* WhatsApp green color */
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: none; /* Initially hide the button */
+  z-index: 999; /* Ensure it's above other content */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.whatsapp-button.active {
+  display: block; /* Show the button when it's active (e.g., when scrolling down) */
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* WhatsApp green color on hover */
+}

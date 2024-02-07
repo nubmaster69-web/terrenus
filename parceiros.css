@@ -1,0 +1,274 @@
+html{
+    font-family: 'Roboto Slab', serif;
+    background-color: #fff ;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+h2{
+  padding-top: 50px;
+  padding-left: 190px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000;
+}
+
+bold{
+  color: #0f4343;
+}
+
+/*navbar superior*/
+.navbar {
+    background-image: url('img/placa\ de\ cores.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-size: cover;
+  }
+  /*corpo do navbar*/
+  .offcanvas-body {
+    position: relative;
+  }
+  
+  .offcanvas-body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/placa\ de\ cores.png'); /* Replace with the actual path to your image file */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Adjust the overlay opacity as needed */
+    z-index: -1; /* Move the overlay behind the content */
+  }
+  
+  .offcanvas-header {
+    position: relative;
+    border: none; /* Remove border from the header */
+  }
+  
+  .offcanvas-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/placa\ de\ cores.png'); /* Replace with the actual path to your image file */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Adjust the overlay opacity as needed */
+    z-index: -1; /* Move the overlay behind the content */
+  }
+  
+  .offcanvas-title {
+    color: white; /* Set text color for the title */
+  }
+  
+  .btn-close {
+    color: white; /* Set text color for the close button */
+  }
+
+  /*container imagem principais clientes*/
+  .img-principais-clientes {
+    text-align: center; /* Centraliza a imagem horizontalmente */
+    margin: 20px 0; /* Adiciona margens para espaçamento */
+}
+
+.img-principais-clientes img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro da div */
+}
+
+.princpal-parceiro{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.img-principal-parceiro img{
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaço extra abaixo da imagem */
+  margin: 0 auto; /* Centraliza a imagem dentro da div */
+}
+
+/*Rodape*/
+footer{
+  background-color: #0f4343;
+  padding: 20px; /* Adicione o preenchimento desejado ao seu rodapé */
+  margin-top: 100px; /* Remover margem superior padrão */
+  margin-bottom: 0; /* Remover margem inferior padrão */
+  position: relative;
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.footer-left,
+.footer-right {
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-right: 10px;
+}
+
+footer li{
+  padding: 10px;
+  padding-left: 190px;
+  color: #fff;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #fff;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin-left: 210px;
+    margin-right: 210px;
+}
+
+/*teste*/
+.social-icons {
+  display: flex;
+  gap: 10px; /* Adjust spacing between circles */
+  position: absolute;
+  bottom: 10px; /* Adjust bottom position as needed */
+  right: 260px; /* Adjust right position as needed */
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Set width and height for each circle */
+  height: 40px;
+  border-radius: 50%; /* Make it a circle */
+  text-decoration: none;
+  color: white;
+}
+
+.social-icons a:nth-child(1) {
+  background-color: #964b00; /* Background color for the first link */
+}
+
+.social-icons a:nth-child(2) {
+  background-color: #6c3c0c; /* Background color for the second link */
+}
+
+.social-icons a:nth-child(3) {
+  background-color: #1c4514; /* Background color for the third link */
+}
+/*configuracao do botao para voltar para o topo*/
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #964b00;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-color: #964b00;
+}
+
+/*configuracao do botao do whatapp*/
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00ff55; /* Blue color, adjust as needed */
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: none; /* Initially hide the button */
+  z-index: 999; /* Ensure it's above other content */
+  transition: background-color 0.3s ease-in-out;
+}
+
+#backToTop.active {
+  display: block; /* Show the button when it's active (e.g., when scrolling down) */
+}
+
+#backToTop:hover {
+  background-color: #6c3c0c; /* Darker blue color on hover */
+}
+
+/* Styles for the WhatsApp button */
+#backToTop {
+  position: fixed;
+  width: 70px; /* Defina o tamanho do botão */
+  height: 70px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6c3c0c; /* Blue color, adjust as needed */
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: none; /* Initially hide the button */
+  z-index: 999; /* Ensure it's above other content */
+  transition: background-color 0.3s ease-in-out;
+}
+
+#backToTop.active {
+  display: block; /* Show the button when it's active (e.g., when scrolling down) */
+}
+
+#backToTop:hover {
+  background-color: #6c3c0c; /* Darker blue color on hover */
+}
+
+/* Styles for the WhatsApp button */
+.whatsapp-button {
+  position: fixed;
+  width: 70px; /* Defina o tamanho do botão */
+  height: 70px;
+  bottom: 20px;
+  right: 100px; /* Adjust right position to align with Back to Top button */
+  background-color: #193314; /* WhatsApp green color */
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: none; /* Initially hide the button */
+  z-index: 999; /* Ensure it's above other content */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.whatsapp-button.active {
+  display: block; /* Show the button when it's active (e.g., when scrolling down) */
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* WhatsApp green color on hover */
+}
